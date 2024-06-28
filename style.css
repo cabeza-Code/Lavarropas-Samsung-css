@@ -1,0 +1,238 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ width: 100vw;
+ height: 100vh;
+}
+
+.caja{
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ background: linear-gradient(45deg,black,#bbcccc);
+}
+
+.lavadora{
+ position: relative;
+ width: 250px;
+ height: 320px;
+ border:solid;
+ overflow:hidden;
+ border-radius: 10px;
+background: linear-gradient(gray,#ffffff,black);
+}
+
+.tapa{
+ position: absolute;
+ width: 100%;
+ height: 20px;
+ border-bottom:solid 2px;
+ background: linear-gradient(gray,#ffffff,black);
+ z-index:100;
+}
+
+.control{
+ position: absolute;
+ width: 120%;
+ height: 120px;
+ border-bottom:solid 2px;
+ border-radius: 50%;
+ left:-10%;
+ top:-30px;
+ background: linear-gradient(gray,#ffffff,black);
+ overflow:hidden;
+}
+
+.cir{
+ position: absolute;
+ width: 170px;
+ height: 170px;
+ border:solid 2px;
+ border-radius: 50%;
+ margin: auto;
+ top:20px;
+ right: 0;
+ left: 0;
+ bottom: 0;
+ background: #ffffff;
+}
+
+.tapa2{
+ position: absolute;
+ width: 100%;
+ height: 30px;
+ border-top:solid 2px;
+ bottom: 0;
+}
+
+.cir2{
+ position: absolute;
+ width: 130px;
+ height: 130px;
+ border:solid 2px;
+ border-radius: 50%;
+ margin: auto;
+ top:0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+}
+
+
+.cir3{
+ position: absolute;
+ width: 120px;
+ height: 120px;
+ border:solid 2px;
+ border-radius: 50%;
+ margin: auto;
+ top:0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+ overflow:hidden;
+}
+
+.manija{
+ position: absolute;
+ width: 30px;
+ height: 50px;
+ border:solid 2px;
+ border-radius: 20px;
+ margin: auto;
+ top:0;
+ right: -10px;
+ bottom: 0;
+ background: linear-gradient(gray,#ffffff,black);
+}
+
+.control2{
+ position: absolute;
+ width: 83px;
+ height: 150px;
+ border:solid 2px;
+ margin: auto;
+ top:0;
+ right:0px;
+ left: 0;
+}
+
+.con1{
+ position: absolute;
+ width: 50px;
+ height: 20px;
+ border:solid 2px;
+ margin: auto;
+ top:30px;
+ bottom: 0;
+ left: 40px;
+ border-radius: 10px;
+ background: linear-gradient(gray,#ffffff,black);
+ display:flex;
+ justify-content:space-between;
+}
+
+.con2{
+ position: absolute;
+ width: 50px;
+ height: 20px;
+ border:solid 2px;
+ margin: auto;
+ top:30px;
+ bottom: 0;
+ right: 40px;
+ border-radius: 5px;
+ background: linear-gradient(orange,yellow);
+}
+
+.perilla{
+ position: absolute;
+ width: 20px;
+ height: 20px;
+ border:solid 2px;
+ margin: auto;
+ top:0;
+ right:0;
+ left: 0;
+ bottom: 0;
+ border-radius: 50%;
+ background: linear-gradient(black,gray);
+}
+
+.p{
+ width:2px ;
+ height: 2px;
+ border:solid 2px;
+ background: black;
+ border-radius: 50%;
+ margin: auto;
+}
+
+.agua{
+ position: absolute;
+ background:linear-gradient(#ffffff,gray);
+ width: 130px;
+ height: 130px;
+ animation:mover 3s linear infinite;
+ margin: auto;
+ top: 0;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ display:flex;
+}
+
+@keyFrames mover{
+ 0%{
+  transform:rotate(-45deg);
+ }
+ 25%{
+  transform:rotate(0deg);
+ }
+ 50%{
+  transform:rotate(45deg);
+ }
+ 75%{
+  transform:rotate(0deg);
+ }
+ 100%{
+  transform:rotate(-45deg);
+ }
+}
+
+.l{
+ position:absolute;
+ width: 100%;
+ height: 60px;
+ background: #114567;
+ bottom: 0;
+ filter:blur(5px); 
+}
+
+.logo{
+ position: absolute;
+ width: 300px;
+ height: 100px;
+ background-image:url(Samsung.png);
+ background-size:100% 100% ;
+ margin: auto;
+ left: 0;
+ right: 0;
+ top:50px;
+ z-index:200;
+}
+
+.ca{
+ position: absolute;
+ width: 70px;
+ height: 100%;
+ border-left:solid 2px;
+ right: 0;
+ background:linear-gradient(black,gray,black);
+}
